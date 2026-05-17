@@ -3,11 +3,11 @@ package com.example.bakery.service;
 import com.example.bakery.model.Order;
 import com.example.bakery.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Service; //Imports the @Service annotation.
 
 import java.util.List;
 
-@Service
+@Service //Declare as a service component.
 public class OrderService {
 
     @Autowired
