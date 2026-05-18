@@ -1,17 +1,13 @@
 package com.example.bakery.model;
 
-import jakarta.persistence.*; //Imports JPA annotations used for database mapping.
-import lombok.Getter;
-import lombok.Setter; //Imports Lombok annotations.
+import jakarta.persistence.*;
 
-@Entity //Set this a database entity.
-@Getter
-@Setter
-@Table(name = "orders") //Mapping to database table.
+@Entity
+@Table(name = "orders")
 public class Order {
 
-    @Id //Primary key.
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //Automatically generates IDs.
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String customerName;
@@ -21,9 +17,36 @@ public class Order {
     private String city;
     private String zip;
     private String state;
-    private String delivery;   // standard, express.
-    private String payment;    // card, paypal, cash.
+    private String delivery;
+    private String payment;
     private String notes;
-    private String items;      // JSON string of cart items.
+    private String items;
     private double total;
+
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public String getCustomerName() { return customerName; }
+    public void setCustomerName(String customerName) { this.customerName = customerName; }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
+    public String getCity() { return city; }
+    public void setCity(String city) { this.city = city; }
+    public String getZip() { return zip; }
+    public void setZip(String zip) { this.zip = zip; }
+    public String getState() { return state; }
+    public void setState(String state) { this.state = state; }
+    public String getDelivery() { return delivery; }
+    public void setDelivery(String delivery) { this.delivery = delivery; }
+    public String getPayment() { return payment; }
+    public void setPayment(String payment) { this.payment = payment; }
+    public String getNotes() { return notes; }
+    public void setNotes(String notes) { this.notes = notes; }
+    public String getItems() { return items; }
+    public void setItems(String items) { this.items = items; }
+    public double getTotal() { return total; }
+    public void setTotal(double total) { this.total = total; }
 }
