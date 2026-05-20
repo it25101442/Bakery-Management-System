@@ -7,12 +7,15 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-
 public class CustomCake {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String design;
+    private String flavor;
+    private String size;
+    private String frosting;
     private String message;
+    private String specialInstructions;
 }
