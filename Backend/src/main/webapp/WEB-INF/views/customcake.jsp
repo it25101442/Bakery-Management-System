@@ -188,12 +188,12 @@
 <!-- FORM -->
 <div class="custom-cake-page">
   <div class="cake-card">
-    <h2>&#127874; Cake Builder</h2>
+    <h2>Cake Builder</h2>
     <p class="sub">Fill in the details below and we'll get started on your dream cake.</p>
 
     <!-- Success message -->
     <div class="success-box" id="successBox">
-      <div class="check">&#10003;</div>
+      <div class="check"></div>
       <h3>Order Received!</h3>
       <p>Your custom cake request has been submitted. We'll contact you to confirm the details.</p>
     </div>
@@ -224,19 +224,16 @@
         <div class="size-grid">
           <label class="size-tile sel" id="tile-small">
             <input type="radio" name="ccSize" value="Small (500g)" checked />
-            <span class="size-icon">&#127859;</span>
             <div class="size-name">Small</div>
             <div class="size-label">500g · 4–6 pax</div>
           </label>
           <label class="size-tile" id="tile-medium">
             <input type="radio" name="ccSize" value="Medium (1kg)" />
-            <span class="size-icon">&#127856;</span>
             <div class="size-name">Medium</div>
             <div class="size-label">1kg · 8–12 pax</div>
           </label>
           <label class="size-tile" id="tile-large">
             <input type="radio" name="ccSize" value="Large (2kg)" />
-            <span class="size-icon">&#127874;</span>
             <div class="size-name">Large</div>
             <div class="size-label">2kg · 16–20 pax</div>
           </label>
@@ -287,7 +284,7 @@
       </div>
 
       <button type="button" class="btn-submit" onclick="submitCustomCake()">
-        &#127874; &nbsp; Submit My Cake Order
+         &nbsp; Submit My Cake Order
       </button>
 
     </form>
